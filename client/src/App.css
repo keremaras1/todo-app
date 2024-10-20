@@ -1,0 +1,62 @@
+/* App.css
+ * This file contains the global styles for the To-Do app,
+ * including layout, typography, and component-specific styling.
+ * While not necessary, some styling has been added to enhance the readability off the app.
+ */
+
+/* Basic styles for the app container */
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Styles for the To-Do list container */
+ul {
+    max-width: 600px;
+    margin: 0 auto; /* Center the list horizontally */
+    padding: 0;
+    list-style-type: none; /* Remove default bullet points */
+}
+
+/* Styling for individual To-Do items */
+.todo-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Added a background color, to slightly contrast list items with the app background */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex; /* Vertical alignment of the content*/
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Ensure space between task and buttons */
+}
+
+/* Styles for the content inside each To-Do item */
+.todo-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow line breaks in long task descriptions */
+    width: 100%; /* Ensure full width for wrapping */
+}
+
+/* Align the checkbox properly with task text */
+.todo-content input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 0; /* Vertically align checkbox with text */
+    align-self: center; /* Ensure the checkbox is vertically centered */
+}
+
+/* Style and align buttons within each To-Do item */
+.todo-content button {
+    margin-left: 5px;
+    align-self: center;
+}
+
+/* Ensure task descriptions can wrap and remain readable */
+.todo-content span {
+    flex: 1; /* Make the task description take up available space */
+    white-space: normal; /* Allow task descriptions to break into multiple lines */
+    word-wrap: break-word; /* Ensure long words are wrapped properly */
+    line-height: 1.5;
+}
