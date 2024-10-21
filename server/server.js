@@ -6,7 +6,7 @@ const cors = require('cors'); // Middleware for handling Cross-Origin Resource S
 const app = express();
 
 const todoRoutes = require('./routes/todoRoutes'); // Import the API routes
-const PORT = process.env.PORT || 5001; // Specify port number or use default port 5000
+const PORT = process.env.PORT || 5001; // Specify port number or use default port 5001
 
 // Use CORS middleware to allow cross-origin requests from the frontend
 app.use(cors()); // This allows requests from different origins. In our case, from different port of the frontend.
