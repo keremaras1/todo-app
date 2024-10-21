@@ -29,7 +29,7 @@ Ensure you have the following installed:
    cd todo-app
 
 2. **Backend Setup**:
-- Navigate to the server folder, install backend dependencies, and start the backend server:
+- From the todo-app directory navigate to the server directory, install backend dependencies, and start the backend server:
    ```bash
    cd server
    npm install
@@ -38,9 +38,9 @@ Ensure you have the following installed:
 - The backend runs on **http://localhost:5001**.
   
 2. **Frontend Setup**:
-- Navigate to the client folder, install frontend dependencies, and start the frontend:
+- From the todo-app directory navigate to the client directory, install frontend dependencies, and start the frontend:
    ```bash
-   cd ../client
+   cd client
    npm install
    npm start
 
